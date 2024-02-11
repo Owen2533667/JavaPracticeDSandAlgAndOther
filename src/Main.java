@@ -4,6 +4,7 @@ import GUI.LoginGUI;
 
 import java.awt.*;
 import java.sql.Array;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 
@@ -11,8 +12,14 @@ public class Main {
 
     public static void main(String[] args) {
 
-        LoginGUI login = new LoginGUI();
+        new LoginGUI();
 
+        int x = 1221;
+
+        System.out.println(isPalindrome(x));
+
+        String attendance = "APPPLLPLPP";
+        System.out.println(checkRecord(attendance));
 
 
         String s = "Owen Hughes";
@@ -99,9 +106,43 @@ public class Main {
             char[] wordTwoChars = wordTwo.toCharArray();
             Arrays.sort(wordOneChars);
             Arrays.sort(wordTwoChars);
-            if(Arrays.equals(wordOneChars,wordTwoChars)) return true;
+            return Arrays.equals(wordOneChars,wordTwoChars);
         }
 
         return false;
+    }
+
+    //https://leetcode.com/problems/palindrome-number/
+    public static boolean isPalindrome(int x) {
+
+        if(x < 0) {
+            return false;
+        }
+
+        int temp = x;
+        ArrayList<Integer> array = new ArrayList<Integer>();
+        do{
+            array.add(temp % 10);
+            temp /= 10;
+        } while  (temp > 0);
+
+        if(array.equals(array.reversed())) {
+            return true;
+        }
+        return false;
+    }
+
+    public static boolean checkRecord(String s) {
+        if(s.contains("LLL")) return false;
+        char someChar = 'A';
+        int count = 0;
+
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == someChar) {
+                count++;
+                if(count >= 2) return false;
+            }
+        }
+        return true;
     }
 }

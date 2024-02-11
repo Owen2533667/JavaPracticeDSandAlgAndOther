@@ -1,17 +1,11 @@
 package GUI;
 
 import javax.swing.*;
+import javax.swing.border.LineBorder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-/**
- *  A simple login graphical user interface, that will allow the user to enter a username and password to log in to
- *  the application. To log in, the user will have to provide a valid username and password into the appropriate text
- *  fields. When the login button is pressed, the data in the fields will be checked to see if they are valid, if not
- *  provide status label "Login Unsuccessful!". Otherwise, "Login Successful" and dispose of the login graphical
- *  interface.
- */
 public class LoginGUI implements ActionListener {
 
     //Attributes
@@ -79,6 +73,8 @@ public class LoginGUI implements ActionListener {
             closeLogin();
         } else {
             showStatusMessage("Login Unsuccessful!", Color.RED);
+            // Shake and highlight the text fields
+            shakeAndHighlightFields();
         }
     }
 
@@ -112,4 +108,45 @@ public class LoginGUI implements ActionListener {
         timer.start();
     }
 
+    /**
+     * Animates the text fields by shaking and highlighting them.
+     */
+    private void shakeAndHighlightFields() {
+        // Shake and highlight animation for text fields
+        shakeComponent(userText);
+        shakeComponent(passwordText);
+    }
+
+    /**
+     * Animates a component by shaking it horizontally.
+     * @param component Component to shake
+     */
+    private void shakeComponent(Component component) {
+        final int shakeDistance = 2;
+        final int shakeCount = 5;
+        Point originalLocation = component.getLocation();
+        Color originalColor = component.getBackground();
+        Timer timer = new Timer(50, null);
+        timer.addActionListener(new ActionListener() {
+            int count = 0;
+            public void actionPerformed(ActionEvent e) {
+                int dx = (count % 2 == 0 ? shakeDistance : -shakeDistance);
+                component.setLocation(originalLocation.x + dx, originalLocation.y);
+                count++;
+                if (count == shakeCount * 2) {
+                    timer.stop();
+                    component.setLocation(originalLocation);
+                    component.setBackground(originalColor); // Revert the background color
+                } else {
+                    // Change foreground color to red during the shake
+                    if (count % 2 == 0) {
+                        component.setForeground(Color.RED);
+                    } else {
+                        component.setBackground(originalColor);
+                    }
+                }
+            }
+        });
+        timer.start();
+    }
 }
