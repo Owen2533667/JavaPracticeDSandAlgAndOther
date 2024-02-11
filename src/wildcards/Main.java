@@ -3,6 +3,8 @@ package wildcards;
 import java.util.ArrayList;
 import java.util.List;
 
+
+
 public class Main {
 
     public static void main(String[] args) {
@@ -42,7 +44,5 @@ public class Main {
         buildings.add(new House());
         System.out.println();
     }
-
-
 
 }

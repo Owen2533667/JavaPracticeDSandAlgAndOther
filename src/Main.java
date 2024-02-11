@@ -1,3 +1,7 @@
+
+
+import GUI.LoginGUI;
+
 import java.awt.*;
 import java.sql.Array;
 import java.util.Arrays;
@@ -6,6 +10,10 @@ import java.util.HashSet;
 public class Main {
 
     public static void main(String[] args) {
+
+        LoginGUI login = new LoginGUI();
+
+
 
         String s = "Owen Hughes";
         String t = "HughesOwen";
