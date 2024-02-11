@@ -23,7 +23,6 @@ public class Main {
     * Contains Duplicate
     * https://leetcode.com/problems/contains-duplicate/description/
     * */
-
     /**
      * Checks an int array to see if duplicate elements exists. For example, an array [1,2,1,3] will return true as 1 is duplicated.
      * This is achieved by using a HashSet of Integers, and a for-loop through the array passed by checking if the

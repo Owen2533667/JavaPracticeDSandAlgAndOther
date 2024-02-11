@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47ca2af2-59ba-48ee-be94-5662e8185e7d" name="Changes" comment="first commit" />
+    <list default="true" id="47ca2af2-59ba-48ee-be94-5662e8185e7d" name="Changes" comment="first commit">
+      <change afterPath="$PROJECT_DIR$/src/GUI/GUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generics/GenericsExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generics/GenericsMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/generics/varargs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/substitution_principle/Building.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/substitution_principle/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/substitution_principle/Office.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/wildcards/Building.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/wildcards/House.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/wildcards/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/wildcards/Office.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,9 +34,23 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Owen2533667&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="8c2948f4-75da-4706-91ab-638d747901cd" />
+        <option name="url" value="https://github.com/Owen2533667/JavaPracticeDSandAlgAndOther.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2cC2p1zwobAmRmnUcb7EsYUvEsx" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -31,14 +59,27 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.GUI.executor": "Run",
     "Application.Main.executor": "Run",
+    "Application.varargs.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "/Users/owenhughes/IdeaProjects/SolutionsNeet/src/Main.java"
+    "last_opened_file_path": "/Users/owenhughes/IdeaProjects/SolutionsNeet/src/wildcards",
+    "onboarding.tips.debug.path": "/Users/owenhughes/IdeaProjects/SolutionsNeet/src/Main.java",
+    "project.structure.last.edited": "Facets",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/wildcards" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -63,7 +104,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707612617042</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1707612659398</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1707612659398</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
