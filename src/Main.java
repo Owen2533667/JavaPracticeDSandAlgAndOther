@@ -4,13 +4,26 @@ import GUI.LoginGUI;
 
 import java.awt.*;
 import java.sql.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
+import java.util.*;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class Main {
 
     public static void main(String[] args) {
+
+
+        String[] names = {"Alice","Bob","Bob"};
+        int[] heights = {155,185,150};
+
+        String[] resultOne = sortPeople(names, heights);
+
+
+        String[] namesOne = {"Mary","John","Emma"};
+        int[] heightsOne = {180,165,170};
+
+        String[] resultTwo = sortPeople(namesOne, heightsOne);
+
 
         new LoginGUI();
 
@@ -144,5 +157,14 @@ public class Main {
             }
         }
         return true;
+    }
+
+    public static String[] sortPeople(String[] names, int[] heights) {
+        Map<Integer, String> map = new IdentityHashMap<>();
+        for (int i = 0; i < names.length; i++) {
+            map.put(heights[i], names[i]);
+        }
+        String[] orderedNames = map.values().toArray(new String[0]);
+        return orderedNames ;
     }
 }
