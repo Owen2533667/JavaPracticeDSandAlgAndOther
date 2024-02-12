@@ -159,6 +159,7 @@ public class Main {
         return true;
     }
 
+    //leetcode problem
     public static String[] sortPeople(String[] names, int[] heights) {
         Map<Integer, String> map = new IdentityHashMap<>();
         for (int i = 0; i < names.length; i++) {
