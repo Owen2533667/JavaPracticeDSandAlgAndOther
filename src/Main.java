@@ -1,17 +1,19 @@
-
-
 import GUI.LoginGUI;
 
-import java.awt.*;
-import java.sql.Array;
 import java.util.*;
-import java.util.List;
-import java.util.stream.Collectors;
+
+import org.w3c.dom.Node;
 
 public class Main {
 
     public static void main(String[] args) {
 
+
+        int[] heightsTwo = {1,1,4,2,1,3};
+
+        insertionSort(heightsTwo);
+
+        System.out.println(heightsTwo);
 
         String[] names = {"Alice","Bob","Bob"};
         int[] heights = {155,185,150};
@@ -91,14 +93,14 @@ public class Main {
     }
 
     //first attempt
-    public static boolean isAnagram2(String s, String t) {
-        for (int i = 0; i < t.length(); i++) {
-            if(s.indexOf(t.charAt(i)) == -1) {
-                return false;
-            }
-        }
-        return true;
-    }
+//    public static boolean isAnagram2(String s, String t) {
+//        for (int i = 0; i < t.length(); i++) {
+//            if(s.indexOf(t.charAt(i)) == -1) {
+//                return false;
+//            }
+//        }
+//        return true;
+//    }
 
     /**
      * Checks to see if String t is an anagram of String s. Will ignore case sensitivity and space, as the
@@ -142,6 +144,7 @@ public class Main {
         if(array.equals(array.reversed())) {
             return true;
         }
+
         return false;
     }
 
@@ -168,4 +171,109 @@ public class Main {
         String[] orderedNames = map.values().toArray(new String[0]);
         return orderedNames ;
     }
+
+    public int[] plusOne(int[] digits) {
+        for (int i = digits.length - 1; i >= 0; i--) {
+            if (digits[i] < 9) {
+                digits[i]++;
+                return digits;
+            }
+            digits[i] = 0;
+        }
+        digits = new int[digits.length + 1];
+        digits[0] = 1;
+        return digits;
+    }
+
+
+    public LinkedList<String> reverseLinkedList(LinkedList<String> s) {
+        ListIterator<String> iterator = s.listIterator();
+        LinkedList<String> reversed = new LinkedList<>();
+    
+        while (iterator.hasNext()) {
+            reversed.addFirst(iterator.next());
+        }
+    
+        return reversed;
+    }
+
+    public LinkedList<String> reverseLinkedList2(LinkedList<String> s) {
+        Collections.reverse(s);
+        return s;
+    }
+
+    // sorts
+
+    // bubblesort O(n^2) The space complexity of bubble sort is O(1)
+    public void bubbleSort(int[] arr) {
+        // Mutates arr so that it is sorted via swapping adjacent elements until
+        // the arr is sorted.
+        boolean hasSwapped = true;
+        while (hasSwapped) {
+            hasSwapped = false;
+            for (int i = 0; i < arr.length - 1; i++) {
+                if (arr[i] > arr[i + 1]) {
+                    // Swap adjacent elements
+                    int temp = arr[i];
+                    arr[i] = arr[i + 1];
+                    arr[i + 1] = temp;
+                    hasSwapped = true;
+                }
+            }
+        }
+    }
+
+
+    public static int heightChecker(int[] heights) {
+
+        int[] copy = Arrays.stream(heights).toArray();
+
+        Arrays.sort(copy);
+
+        int count = 0;
+
+        for (int i = 0; i < heights.length; i++) {
+            if(heights[i] != copy[i]) {
+                count++;
+            }
+        }
+
+        return count;
+    }
+
+
+    // selection Sort
+    public void selectionSort(int[] arr) {
+        // Mutates arr so that it is sorted via selecting the minimum element and
+        // swapping it with the corresponding index
+        int min_index;
+        for (int i = 0; i < arr.length; i++) {
+            min_index = i;
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[j] < arr[min_index]) {
+                    min_index = j;
+                }
+            }
+            // Swap current index with minimum element in rest of list
+            int temp = arr[min_index];
+            arr[min_index] = arr[i];
+            arr[i] = temp;
+        }
+    }
+
+    public static void insertionSort(int[] arr) {
+        // Mutates elements in arr by inserting out of place elements into appropriate
+        // index repeatedly until arr is sorted
+        for (int i = 1; i < arr.length; i++) {
+            int currentIndex = i;
+            while (currentIndex > 0 && arr[currentIndex - 1] > arr[currentIndex]) {
+                // Swap elements that are out of order
+                int temp = arr[currentIndex];
+                arr[currentIndex] = arr[currentIndex - 1];
+                arr[currentIndex - 1] = temp;
+                currentIndex -= 1;
+            }
+        }
+    }
+
 }

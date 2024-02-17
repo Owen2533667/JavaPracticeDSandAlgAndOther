@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47ca2af2-59ba-48ee-be94-5662e8185e7d" name="Changes" comment="Login gui testing Animate text fields when wrong credentials are entered.">
+    <list default="true" id="47ca2af2-59ba-48ee-be94-5662e8185e7d" name="Changes" comment="SortPeople">
+      <change afterPath="$PROJECT_DIR$/src/leetcode/ListNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/queue/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stack/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SolutionsNeet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SolutionsNeet.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +43,9 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -49,8 +58,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.GUI.executor": "Run",
-    "Application.Main.executor": "Debug",
+    "Application.Main.executor": "Run",
     "Application.varargs.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -141,7 +154,23 @@
       <option name="project" value="LOCAL" />
       <updated>1707685063631</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="SortPeople">
+      <option name="closed" value="true" />
+      <created>1707703422466</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1707703422466</updated>
+    </task>
+    <task id="LOCAL-00009" summary="SortPeople">
+      <option name="closed" value="true" />
+      <created>1707703472245</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1707703472245</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -161,19 +190,29 @@
     <MESSAGE value="Login gui testing" />
     <MESSAGE value="Login gui testing updates" />
     <MESSAGE value="Login gui testing Animate text fields when wrong credentials are entered." />
-    <option name="LAST_COMMIT_MESSAGE" value="Login gui testing Animate text fields when wrong credentials are entered." />
+    <MESSAGE value="SortPeople" />
+    <option name="LAST_COMMIT_MESSAGE" value="SortPeople" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>161</line>
-          <properties class="Main" method="sortPeople">
+          <url>file://$PROJECT_DIR$/src/leetcode/Main.java</url>
+          <line>21</line>
+          <properties class="leetcode.Main" method="listReverse">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
-          <option name="timeStamp" value="12" />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>130</line>
+          <properties class="Main" method="isPalindrome">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
