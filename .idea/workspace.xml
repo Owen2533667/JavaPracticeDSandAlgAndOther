@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47ca2af2-59ba-48ee-be94-5662e8185e7d" name="Changes" comment="DS - LinkedList">
-      <change afterPath="$PROJECT_DIR$/src/arraylists/ArrayListVsLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/arraylists/DynamicArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/arraylists/Main.java" afterDir="false" />
+    <list default="true" id="47ca2af2-59ba-48ee-be94-5662e8185e7d" name="Changes" comment="DS - DynamicArrays">
+      <change afterPath="$PROJECT_DIR$/src/linearsearch/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +53,7 @@
   "keyToString": {
     "Application.ArrayListVsLinkedList.executor": "Run",
     "Application.GUI.executor": "Run",
-    "Application.Main.executor": "Debug",
+    "Application.Main.executor": "Run",
     "Application.PriorityQueue.executor": "Run",
     "Application.varargs.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
@@ -184,7 +182,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708282121141</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="DS - DynamicArrays">
+      <option name="closed" value="true" />
+      <created>1708314269813</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1708314269813</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -207,7 +213,8 @@
     <MESSAGE value="SortPeople" />
     <MESSAGE value="DS - stack and queues refresher" />
     <MESSAGE value="DS - LinkedList" />
-    <option name="LAST_COMMIT_MESSAGE" value="DS - LinkedList" />
+    <MESSAGE value="DS - DynamicArrays" />
+    <option name="LAST_COMMIT_MESSAGE" value="DS - DynamicArrays" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
