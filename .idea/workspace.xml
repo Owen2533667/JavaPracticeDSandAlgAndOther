@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47ca2af2-59ba-48ee-be94-5662e8185e7d" name="Changes" comment="DS - DynamicArrays">
-      <change afterPath="$PROJECT_DIR$/src/linearsearch/Main.java" afterDir="false" />
+    <list default="true" id="47ca2af2-59ba-48ee-be94-5662e8185e7d" name="Changes" comment="Al = LinearSearch">
+      <change afterPath="$PROJECT_DIR$/src/binarysearch/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -190,7 +190,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708314269813</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Al = LinearSearch">
+      <option name="closed" value="true" />
+      <created>1708346574649</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1708346574649</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -214,7 +222,8 @@
     <MESSAGE value="DS - stack and queues refresher" />
     <MESSAGE value="DS - LinkedList" />
     <MESSAGE value="DS - DynamicArrays" />
-    <option name="LAST_COMMIT_MESSAGE" value="DS - DynamicArrays" />
+    <MESSAGE value="Al = LinearSearch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Al = LinearSearch" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -254,6 +263,15 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/linearsearch/Main.java</url>
+          <line>57</line>
+          <properties class="linearsearch.Main" method="linearSearchAll">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
