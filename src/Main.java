@@ -141,11 +141,7 @@ public class Main {
             temp /= 10;
         } while  (temp > 0);
 
-        if(array.equals(array.reversed())) {
-            return true;
-        }
-
-        return false;
+        return array.equals(array.reversed());
     }
 
     public static boolean checkRecord(String s) {
