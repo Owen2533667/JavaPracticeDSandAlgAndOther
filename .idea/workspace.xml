@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47ca2af2-59ba-48ee-be94-5662e8185e7d" name="Changes" comment="Al = interpolation search">
-      <change afterPath="$PROJECT_DIR$/src/bubblesort/Main.java" afterDir="false" />
+    <list default="true" id="47ca2af2-59ba-48ee-be94-5662e8185e7d" name="Changes" comment="Al = bubble sort">
+      <change afterPath="$PROJECT_DIR$/src/insertionsort/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/selectionsort/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -214,7 +215,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708372536354</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Al = bubble sort">
+      <option name="closed" value="true" />
+      <created>1708420581172</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1708420581172</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -241,7 +250,8 @@
     <MESSAGE value="Al = LinearSearch" />
     <MESSAGE value="Al = BinarySearch" />
     <MESSAGE value="Al = interpolation search" />
-    <option name="LAST_COMMIT_MESSAGE" value="Al = interpolation search" />
+    <MESSAGE value="Al = bubble sort" />
+    <option name="LAST_COMMIT_MESSAGE" value="Al = bubble sort" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
