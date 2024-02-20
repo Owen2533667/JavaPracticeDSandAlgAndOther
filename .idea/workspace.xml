@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47ca2af2-59ba-48ee-be94-5662e8185e7d" name="Changes" comment="Al = BinarySearch">
-      <change afterPath="$PROJECT_DIR$/src/interpolationsearch/Main.java" afterDir="false" />
+    <list default="true" id="47ca2af2-59ba-48ee-be94-5662e8185e7d" name="Changes" comment="Al = interpolation search">
+      <change afterPath="$PROJECT_DIR$/src/bubblesort/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +53,7 @@
   "keyToString": {
     "Application.ArrayListVsLinkedList.executor": "Run",
     "Application.GUI.executor": "Run",
-    "Application.Main.executor": "Debug",
+    "Application.Main.executor": "Run",
     "Application.PriorityQueue.executor": "Run",
     "Application.varargs.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
@@ -207,7 +206,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708349584028</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Al = interpolation search">
+      <option name="closed" value="true" />
+      <created>1708372536354</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1708372536354</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -233,7 +240,8 @@
     <MESSAGE value="DS - DynamicArrays" />
     <MESSAGE value="Al = LinearSearch" />
     <MESSAGE value="Al = BinarySearch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Al = BinarySearch" />
+    <MESSAGE value="Al = interpolation search" />
+    <option name="LAST_COMMIT_MESSAGE" value="Al = interpolation search" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
