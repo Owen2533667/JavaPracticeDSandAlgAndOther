@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_INJECTED_CODE" value="false" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47ca2af2-59ba-48ee-be94-5662e8185e7d" name="Changes" comment="Al = bubble sort">
-      <change afterPath="$PROJECT_DIR$/src/insertionsort/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/selectionsort/Main.java" afterDir="false" />
+    <list default="true" id="47ca2af2-59ba-48ee-be94-5662e8185e7d" name="Changes" comment="Al = selection and insertion sort">
+      <change afterPath="$PROJECT_DIR$/src/recursion/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +41,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -70,6 +72,7 @@
     "project.structure.last.edited": "Facets",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
@@ -223,7 +226,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708420581172</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Al = selection and insertion sort">
+      <option name="closed" value="true" />
+      <created>1708472210680</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1708472210680</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -251,7 +262,8 @@
     <MESSAGE value="Al = BinarySearch" />
     <MESSAGE value="Al = interpolation search" />
     <MESSAGE value="Al = bubble sort" />
-    <option name="LAST_COMMIT_MESSAGE" value="Al = bubble sort" />
+    <MESSAGE value="Al = selection and insertion sort" />
+    <option name="LAST_COMMIT_MESSAGE" value="Al = selection and insertion sort" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
