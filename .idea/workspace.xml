@@ -7,12 +7,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47ca2af2-59ba-48ee-be94-5662e8185e7d" name="Changes" comment="Al = selection and insertion sort">
-      <change afterPath="$PROJECT_DIR$/.idea/intellij-javadocs-4.0.1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bankaccount/BankAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bankaccount/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mergesort/Main.java" afterDir="false" />
+    <list default="true" id="47ca2af2-59ba-48ee-be94-5662e8185e7d" name="Changes" comment="Bank account">
+      <change afterPath="$PROJECT_DIR$/src/bankaccount/BankAppGUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,6 +55,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.ArrayListVsLinkedList.executor": "Run",
+    "Application.BankAppGUI.executor": "Run",
     "Application.GUI.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.PriorityQueue.executor": "Run",
@@ -82,6 +79,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="bankaccount" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/wildcards" />
       <recent name="$PROJECT_DIR$/src" />
@@ -247,7 +247,23 @@
       <option name="project" value="LOCAL" />
       <updated>1708483350080</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Al = merge sort">
+      <option name="closed" value="true" />
+      <created>1708636936987</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1708636936987</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Bank account">
+      <option name="closed" value="true" />
+      <created>1708636951006</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1708636951006</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -276,7 +292,9 @@
     <MESSAGE value="Al = interpolation search" />
     <MESSAGE value="Al = bubble sort" />
     <MESSAGE value="Al = selection and insertion sort" />
-    <option name="LAST_COMMIT_MESSAGE" value="Al = selection and insertion sort" />
+    <MESSAGE value="Al = merge sort" />
+    <MESSAGE value="Bank account" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bank account" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
