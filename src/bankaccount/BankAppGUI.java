@@ -102,7 +102,7 @@ public class BankAppGUI {
             currentAccount = new BankAccount();
             // Set the account number and balance in the text fields
             nameTextField.setText(String.valueOf(currentAccount.getAccountNumber()));
-            balanceTextField.setText(String.format("%.2f", currentAccount.getBalance()));
+            balanceTextField.setText(String.format("£%.2f", currentAccount.getBalance()));
             existingAccountNumberTextField.setText("");
             // Add the new account to the list of accounts
             accounts.add(currentAccount);
@@ -137,7 +137,7 @@ public class BankAppGUI {
                         currentAccount = account;
                         // Display the account details in the text fields
                         nameTextField.setText(String.valueOf(currentAccount.getAccountNumber()));
-                        balanceTextField.setText(String.format("%.2f", currentAccount.getBalance()));
+                        balanceTextField.setText(String.format("£%.2f", currentAccount.getBalance()));
                         existingAccountNumberTextField.setText("");
                         // Display a success message
                         JOptionPane.showMessageDialog(frame, "Account retrieved successfully.");
@@ -171,7 +171,7 @@ public class BankAppGUI {
                 // Deposit the amount into the current account
                 currentAccount.deposit(amount);
                 // Update the balance field with the new balance
-                balanceTextField.setText(String.format("%.2f", currentAccount.getBalance()));
+                balanceTextField.setText(String.format("£%.2f", currentAccount.getBalance()));
                 // Clear the amount field
                 amountTextField.setText("");
                 // Display a success message
@@ -207,7 +207,7 @@ public class BankAppGUI {
                 // Withdraw the amount from the current account
                 currentAccount.withdraw(amount);
                 // Update the balance field with the new balance
-                balanceTextField.setText(String.format("%.2f", currentAccount.getBalance()));
+                balanceTextField.setText(String.format("£%.2f", currentAccount.getBalance()));
                 // Clear the amount field
                 amountTextField.setText("");
                 // Display a success message
