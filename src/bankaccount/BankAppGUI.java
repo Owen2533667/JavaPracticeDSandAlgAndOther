@@ -24,6 +24,8 @@ public class BankAppGUI {
         }
 
         frame = new JFrame("Bank App");
+        frame.setResizable(false);
+        frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         // Account Panel
