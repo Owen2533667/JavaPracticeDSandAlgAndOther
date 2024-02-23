@@ -8,6 +8,7 @@ import java.util.Random;
 
 /**
  * BankAppGUI class provides a graphical user interface for a simple bank application.
+ * @author owenhughes
  */
 public class BankAppGUI {
 
@@ -225,6 +226,8 @@ public class BankAppGUI {
     private class LogListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
+            System.out.println("*******************");
+            System.out.println(currentAccount);
             System.out.println("*******************");
             for (BankAccount account : accounts) {
                 System.out.println(account);
