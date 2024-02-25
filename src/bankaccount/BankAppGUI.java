@@ -3,6 +3,7 @@ package bankaccount;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.text.NumberFormat;
 import java.util.LinkedList;
 import java.util.Random;
 
@@ -32,13 +33,14 @@ public class BankAppGUI {
      */
     public BankAppGUI() {
         // Create sample accounts
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 10000; i++) {
             // Generate random initial balances for sample accounts
-            accounts.add(new BankAccount(rand.nextDouble() * 1000));
+            accounts.add(new BankAccount(rand.nextDouble() * 10000000));
         }
 
         // Initialise frame
         frame = new JFrame("Bank App");
+        frame.setBackground(Color.blue);
         frame.setResizable(false);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -46,6 +48,7 @@ public class BankAppGUI {
         // Account Panel
         accountPanel = new JPanel(new GridLayout(4, 2, 5, 5));
         accountPanel.setBorder(BorderFactory.createTitledBorder("Account Information"));
+//        accountPanel.setBackground(Color.lightGray);
         existingAccountNumberTextField = new JTextField(15);
         balanceTextField = new JTextField(15);
         balanceTextField.setEditable(false);
@@ -65,6 +68,7 @@ public class BankAppGUI {
         // Transaction Panel
         transactionPanel = new JPanel(new GridLayout(3, 2, 5, 5));
         transactionPanel.setBorder(BorderFactory.createTitledBorder("Transactions"));
+//        transactionPanel.setBackground(Color.pink);
         amountTextField = new JTextField(15);
         depositButton = new JButton("Deposit");
         withdrawButton = new JButton("Withdraw");
@@ -77,6 +81,7 @@ public class BankAppGUI {
 
         // Main Panel
         JPanel mainPanel = new JPanel(new GridLayout(2, 1, 5, 5));
+        mainPanel.setBackground(Color.black);
         mainPanel.add(accountPanel);
         mainPanel.add(transactionPanel);
 
@@ -103,7 +108,7 @@ public class BankAppGUI {
             currentAccount = new BankAccount();
             // Set the account number and balance in the text fields
             nameTextField.setText(String.valueOf(currentAccount.getAccountNumber()));
-            balanceTextField.setText(String.format("£%.2f", currentAccount.getBalance()));
+            balanceTextField.setText(String.format("£%s", NumberFormat.getInstance().format(currentAccount.getBalance())));
             existingAccountNumberTextField.setText("");
             // Add the new account to the list of accounts
             accounts.add(currentAccount);
@@ -138,7 +143,8 @@ public class BankAppGUI {
                         currentAccount = account;
                         // Display the account details in the text fields
                         nameTextField.setText(String.valueOf(currentAccount.getAccountNumber()));
-                        balanceTextField.setText(String.format("£%.2f", currentAccount.getBalance()));
+                        balanceTextField.setText(String.format("%s",
+                                NumberFormat.getCurrencyInstance().format(currentAccount.getBalance())));
                         existingAccountNumberTextField.setText("");
                         // Display a success message
                         JOptionPane.showMessageDialog(frame, "Account retrieved successfully.");
@@ -172,7 +178,8 @@ public class BankAppGUI {
                 // Deposit the amount into the current account
                 currentAccount.deposit(amount);
                 // Update the balance field with the new balance
-                balanceTextField.setText(String.format("£%.2f", currentAccount.getBalance()));
+                balanceTextField.setText(String.format("%s",
+                        NumberFormat.getCurrencyInstance().format(currentAccount.getBalance())));
                 // Clear the amount field
                 amountTextField.setText("");
                 // Display a success message
@@ -208,7 +215,8 @@ public class BankAppGUI {
                 // Withdraw the amount from the current account
                 currentAccount.withdraw(amount);
                 // Update the balance field with the new balance
-                balanceTextField.setText(String.format("£%.2f", currentAccount.getBalance()));
+                balanceTextField.setText(String.format("%s",
+                        NumberFormat.getCurrencyInstance().format(currentAccount.getBalance())));
                 // Clear the amount field
                 amountTextField.setText("");
                 // Display a success message
@@ -229,9 +237,16 @@ public class BankAppGUI {
             System.out.println("*******************");
             System.out.println(currentAccount);
             System.out.println("*******************");
+            double topBal = 0;
+            int topAccNum = 0;
             for (BankAccount account : accounts) {
                 System.out.println(account);
+                if (account.getBalance() > topBal) {
+                    topAccNum = account.getAccountNumber();
+                    topBal = account.getBalance();
+                }
             }
+            System.out.println("Top balance: " + topAccNum + " with " + topBal);
         }
     }
 

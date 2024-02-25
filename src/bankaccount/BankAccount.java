@@ -1,5 +1,7 @@
 package bankaccount;
 
+import java.text.NumberFormat;
+
 /**
  * This class represents a bank account with basic functionalities like depositing, withdrawing, and checking balance.
  *
@@ -115,6 +117,7 @@ public class BankAccount {
      */
     @Override
     public String toString() {
-        return String.format("Account:[Number: %d, Balance: £ %.2f]", accountNumber, balance);
+        return String.format("Account:[Number: %d, Balance: £ %s]", accountNumber,
+                NumberFormat.getInstance().format(balance));
     }
 }
