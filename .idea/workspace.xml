@@ -8,9 +8,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47ca2af2-59ba-48ee-be94-5662e8185e7d" name="Changes" comment="Bank account GUI">
+      <change afterPath="$PROJECT_DIR$/src/functionalinterface/GreetingMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/functionalinterface/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/game/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/game/guessinggame/GameApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/game/guessinggame/GuessingGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/game/guessinggame/GuessingGameTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hashmap/example/HashMapExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lambda/GreetingMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lambda/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lambda/MessagePrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/linkedhashmap/example/LinkedHashMapExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/methodreferances/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/methodreferances/Shapes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/methodreferances/Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/queue/examples/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/queue/examples/Store.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SolutionsNeet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SolutionsNeet.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bankaccount/BankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bankaccount/BankAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bankaccount/BankAppGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bankaccount/BankAppGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bankaccount/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bankaccount/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +38,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -58,10 +76,14 @@
     "Application.ArrayListVsLinkedList.executor": "Run",
     "Application.BankAppGUI.executor": "Debug",
     "Application.GUI.executor": "Run",
+    "Application.HashMapExample.executor": "Run",
+    "Application.LinkedHashMapExample.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.PriorityQueue.executor": "Run",
+    "Application.Store.executor": "Run",
     "Application.varargs.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.GuessingGameTest.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
@@ -70,7 +92,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/owenhughes/IdeaProjects/SolutionsNeet/src/wildcards",
+    "last_opened_file_path": "/Users/owenhughes/IdeaProjects/SolutionsNeet",
     "onboarding.tips.debug.path": "/Users/owenhughes/IdeaProjects/SolutionsNeet/src/Main.java",
     "project.structure.last.edited": "Facets",
     "project.structure.proportion": "0.0",
@@ -84,6 +106,7 @@
       <recent name="bankaccount" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/game" />
       <recent name="$PROJECT_DIR$/src/wildcards" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
@@ -304,7 +327,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708712350183</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Bank account GUI">
+      <option name="closed" value="true" />
+      <created>1708878085443</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1708878085444</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -424,10 +455,5 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="int x = 8+8;" language="JAVA" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>
