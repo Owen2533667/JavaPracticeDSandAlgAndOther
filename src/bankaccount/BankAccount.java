@@ -120,4 +120,5 @@ public class BankAccount {
         return String.format("Account:[Number: %d, Balance: £ %s]", accountNumber,
                 NumberFormat.getInstance().format(balance));
     }
+
 }
