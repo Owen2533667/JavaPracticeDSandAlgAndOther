@@ -7,11 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47ca2af2-59ba-48ee-be94-5662e8185e7d" name="Changes" comment="Java stream">
-      <change afterPath="$PROJECT_DIR$/src/thread/extendthread/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/thread/extendthread/ThreadExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/thread/runnable/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/thread/runnable/RunnableExample.java" afterDir="false" />
+    <list default="true" id="47ca2af2-59ba-48ee-be94-5662e8185e7d" name="Changes" comment="Java threads">
+      <change afterPath="$PROJECT_DIR$/src/deadlock/Kitchen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/synchronisation/ATM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/synchronisation/BankAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/synchronisation/Users.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,37 +56,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.ArrayListVsLinkedList.executor&quot;: &quot;Run&quot;,
-    &quot;Application.BankAppGUI.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.GUI.executor&quot;: &quot;Run&quot;,
-    &quot;Application.HashMapExample.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Library.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LinkedHashMapExample.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PriorityQueue.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Store.executor&quot;: &quot;Run&quot;,
-    &quot;Application.varargs.executor&quot;: &quot;Run&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;JUnit.GuessingGameTest.executor&quot;: &quot;Run&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/owenhughes/IdeaProjects/SolutionsNeet&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/owenhughes/IdeaProjects/SolutionsNeet/src/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Facets&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ArrayListVsLinkedList.executor": "Run",
+    "Application.BankAppGUI.executor": "Debug",
+    "Application.GUI.executor": "Run",
+    "Application.HashMapExample.executor": "Run",
+    "Application.Kitchen.executor": "Run",
+    "Application.Library.executor": "Run",
+    "Application.LinkedHashMapExample.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.PriorityQueue.executor": "Run",
+    "Application.Store.executor": "Run",
+    "Application.Users.executor": "Run",
+    "Application.varargs.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.GuessingGameTest.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/owenhughes/IdeaProjects/SolutionsNeet",
+    "onboarding.tips.debug.path": "/Users/owenhughes/IdeaProjects/SolutionsNeet/src/Main.java",
+    "project.structure.last.edited": "Facets",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="bankaccount" />
@@ -393,7 +395,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709078753896</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Java threads">
+      <option name="closed" value="true" />
+      <created>1709085586831</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1709085586831</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -408,7 +418,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="first commit" />
     <MESSAGE value="Sharping my memory on some java" />
     <MESSAGE value="Login gui testing" />
     <MESSAGE value="Login gui testing updates" />
@@ -433,7 +442,8 @@
     <MESSAGE value="Use of functional interfaces" />
     <MESSAGE value="Other" />
     <MESSAGE value="Java stream" />
-    <option name="LAST_COMMIT_MESSAGE" value="Java stream" />
+    <MESSAGE value="Java threads" />
+    <option name="LAST_COMMIT_MESSAGE" value="Java threads" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
