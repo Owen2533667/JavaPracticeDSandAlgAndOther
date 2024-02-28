@@ -7,11 +7,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47ca2af2-59ba-48ee-be94-5662e8185e7d" name="Changes" comment="Java threads">
-      <change afterPath="$PROJECT_DIR$/src/deadlock/Kitchen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/synchronisation/ATM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/synchronisation/BankAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/synchronisation/Users.java" afterDir="false" />
+    <list default="true" id="47ca2af2-59ba-48ee-be94-5662e8185e7d" name="Changes" comment="Java threads synchronisation and deadlock">
+      <change afterPath="$PROJECT_DIR$/src/bufferedreader/BufferedReaderExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bufferedreader/example.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/directories/DirectoriesExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/file/FileCreationExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/filecopy/FileCopyExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/filecopy/example.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pathclass/HelloWorld.text" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pathclass/PathClassExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scanner/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scanner/PersonCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/trywithresource/TryWithResourceExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,14 +67,22 @@
   "keyToString": {
     "Application.ArrayListVsLinkedList.executor": "Run",
     "Application.BankAppGUI.executor": "Debug",
+    "Application.BufferedReader.executor": "Run",
+    "Application.BufferedReaderExample.executor": "Run",
+    "Application.DirectoriesExample.executor": "Run",
+    "Application.FileCopyExample.executor": "Run",
+    "Application.FileCreationExample.executor": "Run",
     "Application.GUI.executor": "Run",
     "Application.HashMapExample.executor": "Run",
     "Application.Kitchen.executor": "Run",
     "Application.Library.executor": "Run",
     "Application.LinkedHashMapExample.executor": "Run",
     "Application.Main.executor": "Run",
+    "Application.PathClassExample.executor": "Run",
+    "Application.PersonCreator.executor": "Run",
     "Application.PriorityQueue.executor": "Run",
     "Application.Store.executor": "Run",
+    "Application.TryWithResourceExample.executor": "Run",
     "Application.Users.executor": "Run",
     "Application.varargs.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
@@ -80,7 +95,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/owenhughes/IdeaProjects/SolutionsNeet",
+    "last_opened_file_path": "/Users/owenhughes/IdeaProjects/SolutionsNeet/src/filecopy",
     "onboarding.tips.debug.path": "/Users/owenhughes/IdeaProjects/SolutionsNeet/src/Main.java",
     "project.structure.last.edited": "Facets",
     "project.structure.proportion": "0.0",
@@ -94,6 +109,8 @@
       <recent name="bankaccount" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/filecopy" />
+      <recent name="$PROJECT_DIR$/src/bufferedreader" />
       <recent name="$PROJECT_DIR$/src/game" />
       <recent name="$PROJECT_DIR$/src/wildcards" />
       <recent name="$PROJECT_DIR$/src" />
@@ -403,7 +420,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709085586831</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Java threads synchronisation and deadlock">
+      <option name="closed" value="true" />
+      <created>1709144544706</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1709144544706</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -418,7 +443,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Sharping my memory on some java" />
     <MESSAGE value="Login gui testing" />
     <MESSAGE value="Login gui testing updates" />
     <MESSAGE value="Login gui testing Animate text fields when wrong credentials are entered." />
@@ -443,7 +467,8 @@
     <MESSAGE value="Other" />
     <MESSAGE value="Java stream" />
     <MESSAGE value="Java threads" />
-    <option name="LAST_COMMIT_MESSAGE" value="Java threads" />
+    <MESSAGE value="Java threads synchronisation and deadlock" />
+    <option name="LAST_COMMIT_MESSAGE" value="Java threads synchronisation and deadlock" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
