@@ -9,7 +9,7 @@ public class Main {
         //                 of a target value within a sorted arrays.
         //                 Half of the array is eliminated during each "step"
 
-        int array[] = new int[1000000];
+        int[] array = new int[1000000];
         int target = 800787;
 
         for (int i = 0; i < array.length; i++) {

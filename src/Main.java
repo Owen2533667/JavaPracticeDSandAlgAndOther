@@ -1,19 +1,21 @@
-import GUI.LoginGUI;
-
 import java.util.*;
-
-import org.w3c.dom.Node;
 
 public class Main {
 
     public static void main(String[] args) {
 
 
+        int[] intsmore = {2,4,6};
+
+        int[] doubleints = Arrays.stream(intsmore).map(x -> x * 2).toArray();
+
+        System.out.println(Arrays.toString(doubleints));
+
         int[] heightsTwo = {1,1,4,2,1,3};
 
         insertionSort(heightsTwo);
 
-        System.out.println(heightsTwo);
+        System.out.println(Arrays.toString(heightsTwo));
 
         String[] names = {"Alice","Bob","Bob"};
         int[] heights = {155,185,150};
@@ -27,7 +29,7 @@ public class Main {
         String[] resultTwo = sortPeople(namesOne, heightsOne);
 
 
-        new LoginGUI();
+//        new LoginGUI();
 
         int x = 1221;
 
@@ -35,7 +37,6 @@ public class Main {
 
         String attendance = "APPPLLPLPP";
         System.out.println(checkRecord(attendance));
-
 
         String s = "Owen Hughes";
         String t = "HughesOwen";

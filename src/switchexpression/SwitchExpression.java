@@ -14,6 +14,7 @@ public class SwitchExpression {
         };
         System.out.println("Number of letters: " + numLetters);
 
+
     }
 
 }

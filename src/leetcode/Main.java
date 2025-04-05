@@ -1,5 +1,9 @@
 package leetcode;
 
+import leetcode.*;
+
+
+
 public class Main {
     public static void main(String[] args) {
 
@@ -15,6 +19,7 @@ public class Main {
         e3.next = e4;
 
         System.out.println(listReverse(head));
+
 
 
     }

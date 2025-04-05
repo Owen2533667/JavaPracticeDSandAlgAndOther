@@ -17,7 +17,7 @@ public class Main {
         //                 Advantage:
         //                 Fast for searches of small to medium data sets
         //                 Does not need to be sorted
-        //                 Uaeful for data structures that do not have random access (Linked List)
+        //                 Useful for data structures that do not have random access (Linked List)
 
 
         int[] array = {9, 1, 8, 2, 1, 7, 3, 6, 4, 5, 1, 1};
