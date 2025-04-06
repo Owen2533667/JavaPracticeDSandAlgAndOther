@@ -18,6 +18,7 @@ public class Main {
 
         System.out.println(WordFrequencyCounter.sumNumbersFromFile("/Users/owenhughes/IdeaProjects/SolutionsNeet/src/WordFrequencyCounter/data.txt"));
 
+        System.out.println(WordFrequencyCounter.calculateCharacterFrequency("Hello World"));
 
     }
 }

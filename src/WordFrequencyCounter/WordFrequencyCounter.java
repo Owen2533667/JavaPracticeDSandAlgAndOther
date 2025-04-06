@@ -80,4 +80,19 @@ public class WordFrequencyCounter {
         return total;
     }
 
+    public static Map<Character, Integer> calculateCharacterFrequency(String text) {
+
+        if (text == null || text.trim().isEmpty()) {
+            return new HashMap<>();
+        }
+
+        HashMap<Character, Integer> charCount = new HashMap<>();
+
+        for (char c : text.toCharArray()) {
+            charCount.put(c, charCount.getOrDefault(c, 0) + 1);
+        }
+
+        return charCount;
+    }
+
 }
