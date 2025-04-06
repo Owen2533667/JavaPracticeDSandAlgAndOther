@@ -1,11 +1,23 @@
 package WordFrequencyCounter;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * The type Word frequency counter.
+ */
 public class WordFrequencyCounter {
 
 
+    /**
+     * Count word frequencies map.
+     *
+     * @param text the text
+     * @return the map
+     */
     public static Map<String, Integer> countWordFrequencies(String text) {
 
         if (text == null || text.trim().isEmpty()) {
@@ -25,6 +37,12 @@ public class WordFrequencyCounter {
         return wordCount;
     }
 
+    /**
+     * Is palindrome boolean.
+     *
+     * @param text the text
+     * @return the boolean
+     */
     public static boolean isPalindrome(String text) {
 
         if (text == null) {
@@ -40,6 +58,26 @@ public class WordFrequencyCounter {
         StringBuilder reversedText = new StringBuilder(cleanedText).reverse();
 
         return cleanedText.contentEquals(reversedText);
+    }
+
+    public static double sumNumbersFromFile(String filePath) throws IOException {
+
+        double total = 0.0;
+        try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                if (line.trim().isEmpty()) {
+                    continue;
+                }
+                try {
+                    double parsedNum = Double.parseDouble(line.trim());
+                    total += parsedNum;
+                } catch (NumberFormatException e) {
+                    System.out.println("Skipped line");
+                }
+            }
+        }
+        return total;
     }
 
 }

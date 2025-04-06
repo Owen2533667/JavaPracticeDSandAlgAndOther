@@ -1,10 +1,10 @@
 package WordFrequencyCounter;
 
 
-
+import java.io.IOException;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         System.out.println(WordFrequencyCounter.countWordFrequencies("Hello world! This is a test. Hello again."));
 
@@ -15,6 +15,8 @@ public class Main {
         System.out.println(WordFrequencyCounter.isPalindrome("!"));
         System.out.println(WordFrequencyCounter.isPalindrome(""));
         System.out.println(WordFrequencyCounter.isPalindrome(null));
+
+        System.out.println(WordFrequencyCounter.sumNumbersFromFile("/Users/owenhughes/IdeaProjects/SolutionsNeet/src/WordFrequencyCounter/data.txt"));
 
 
     }
